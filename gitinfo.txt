@@ -1,0 +1,31 @@
+git status = tells you what you've changed (obviously)
+
+To stop tracking a file you need to remove it from the index. This can be achieved with this command.
+git rm --cached <file>
+
+If you want to remove a whole folder, you need to remove all files in it recursively
+git rm -r --cached <folder>
+
+Initialize the local directory as a Git repository.
+git init -b main
+
+Add the files in your new local repository. This stages them for the first commit.
+git add .
+
+Commit the files that you've staged in your local repository.
+git commit -m "First commit"
+
+At the top of your repository on GitHub.com's Quick Setup page, click  to copy the remote repository URL.
+
+$ git remote add origin  <REMOTE_URL> 
+# Sets the new remote
+
+$ git remote -v
+# Verifies the new remote URL
+
+$ git push origin main
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+
+unstage added file
+(use "git restore --staged <file>..." to unstage)
