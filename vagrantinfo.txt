@@ -1,0 +1,16 @@
+have to run commands from vagrant environment. E.g navigate to directory with vagrantfile.
+vagrant init - initialize current dir as vagrant env by creating vagrantfile in it
+vagrant status - tell you the state of the machines Vagrant is managing
+vagrant up - creates and configures guest machines according to your Vagrantfile.(runs)
+vagrant halt - shuts down the running machine Vagrant is managing.
+vagrant ssh - will SSH into a running Vagrant machine and give you access to a shell.
+(on windows u have to have ssh client eg git ssh client )
+def root pass is vagrant, user is vagrant with pass vagrant
+vagrant reload for changes in vagrant file
+vagrant destroy - deletes vm machine
+
+vagrant box add [address]
+-shorthand name from the public catalog of available Vagrant images, such as "hashicorp/bionic64"
+-File path or HTTP URL to a box in a catalog.
+-URL directly a box file. In this case, you must specify a --name flag (see below) and versioning/updates will not work:
+vagrant box add shellclass shellclass.box
