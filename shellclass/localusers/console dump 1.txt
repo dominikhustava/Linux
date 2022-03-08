@@ -1,0 +1,33 @@
+[vagrant@10 ~]$ history
+    1  ls -l
+    2  pwd
+    3  vim luser-demo01.sh
+    4  ls -l
+    5  vim luser-demo01.sh
+    6  ./luser-demo01.sh
+    7  ls
+    8  ls -l
+    9  chmod 755 luser-demo01.sh
+   10  ls -l
+   11  ./luser-demo01.sh
+   12  /vagrant/luser-demo01.sh
+   13  pwd
+   14  /home/vagrant/luser-demo01.sh
+   15  mv luser-demo01.sh bla
+   16  ./bla
+   17  mv bla luser-demo01.sh
+   18  ls -l
+   19  touch bla.sh
+   20  vim luser-demo01.sh
+   21  type echo
+   22  type vim
+   23  type -a echo
+   24  help echo
+   25  help echo |less
+   26  uptime
+   27  man uptime
+   28  vim luser-demo01.sh
+   29  ./luser-demo01.sh
+   30  vim luser-demo01.sh
+   31  ./luser-demo01.sh
+   32  history
