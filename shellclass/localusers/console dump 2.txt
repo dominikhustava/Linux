@@ -1,0 +1,98 @@
+[vagrant@10 ~]$ history
+    1  ls -l
+    2  pwd
+    3  vim luser-demo01.sh
+    4  ls -l
+    5  vim luser-demo01.sh
+    6  ./luser-demo01.sh
+    7  ls
+    8  ls -l
+    9  chmod 755 luser-demo01.sh
+   10  ls -l
+   11  ./luser-demo01.sh
+   12  /vagrant/luser-demo01.sh
+   13  pwd
+   14  /home/vagrant/luser-demo01.sh
+   15  mv luser-demo01.sh bla
+   16  ./bla
+   17  mv bla luser-demo01.sh
+   18  ls -l
+   19  touch bla.sh
+   20  vim luser-demo01.sh
+   21  type echo
+   22  type vim
+   23  type -a echo
+   24  help echo
+   25  help echo |less
+   26  uptime
+   27  man uptime
+   28  vim luser-demo01.sh
+   29  ./luser-demo01.sh
+   30  vim luser-demo01.sh
+   31  ./luser-demo01.sh
+   32  history
+   33  exit
+   34  ls
+   35  cd ..
+   36  cd..
+   37  cd ..
+   38  ls
+   39  cp ~/luser-demo01.sh /vagrant/luser-demo01.sh
+   40  exit
+   41  cd /vagrant
+   42  vim luser-demo02.sh
+   43  ./luser-demo02.sh
+   44  ls -l
+   45  man bash
+   46  echo BASH
+   47  echo BASHPID
+   48  echo ${BASH}
+   49  echo ${BASHPID}
+   50  echo ${BASH_COMMAND}
+   51  echo ${BASH VERSION}
+   52  echo ${BASHVERSION}
+   53  echo ${BASH_VERSION}
+   54  echo ${GROUPS}
+   55  echo ${HOSTNAME}
+   56  echo ${HOSTTYPE}
+   57  echo ${MACHTYPE}
+   58  echo ${OSTYPE}
+   59  echo ${PPID}
+   60  echo ${HOME}
+   61  echo ${LANG}
+   62  echo ${PATH}
+   63  echo ${SHELL}
+   64  echo ${TIMEFORMAT}
+   65  echo ${TIME_FORMAT}
+   66  type -a id
+   67  man id
+   68  id
+   69  id -n
+   70  man id
+   71  id -n 1000
+   72  man id
+   73  id -u -n
+   74  id -nu
+   75  id -un
+   76  whoami
+   77  type -a whoami
+   78  type -a ls
+   79  type -a cd
+   80  man cd
+   81  help cd
+   82  man whoami
+   83  vim luser-demo02.sh
+   84  ./ luser-demo02.sh
+   85  ./luser-demo02.sh
+   86  vim luser-demo02.sh
+   87  ./luser-demo02.sh
+   88  type -a if
+   89  type -a [[
+   90  help [[
+   91  help [[ | less
+   92  type -a test
+   93  help test |less
+   94  sudo ./luser-demo02.sh
+   95  su
+   96  exit
+   97  history

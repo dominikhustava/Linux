@@ -1,0 +1,21 @@
+${UID} is a special preset variable that comes with bash - current user id
+
+man bash - opens bash manual, we can navigate like in vim and search be /UID + enter (optionally n as next occur.)
+
+? for reverse search
+
+type -a is used to display information about the command type. 
+-to know if its a command(shell builtin) or program, to use man or help
+
+VAR=$(id -un) - syntax how to store command output to variable
+alternative older style syntax would be VAR=`id -un`
+
+spaces arround [[ ]] are mandatory
+Syntax is not portable on every shell( it's bash syntax
+older way was single bracket [ ] 
+
+less - pager
+
+root's UID is 0 always
+
+
