@@ -18,4 +18,9 @@ less - pager
 
 root's UID is 0 always
 
+"{?}" - special variable that sets bash, holds exit status of most recently executed command. 
+
+testing strings is with = sign but can be used ==
+- the right side string is used as pattern and pattern matching is performed 
+
 

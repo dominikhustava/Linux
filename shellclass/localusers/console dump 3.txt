@@ -1,0 +1,7 @@
+100  vim luser-demo03.sh
+  101  ./luser-demo03.sh
+  102  sudo ./luser-demo03.sh
+  103  vim ./luser-demo03.sh
+  104  ./luser-demo03.sh
+  105  echo ${?}
+  106  history
