@@ -23,4 +23,21 @@ root's UID is 0 always
 testing strings is with = sign but can be used ==
 - the right side string is used as pattern and pattern matching is performed 
 
+useradd command
+-LOGIN = username, typicaly 8 or less chars is the convention(based on history old unix systems etc)
+You would not see them in ps -ef(show every process)
+-usernames are case sensitive,
 
+configuration section of man page (for useradd cmd)
+/CONFIGURATION
+->shows conf variables in /etc/login.defs that change the behavior of useradd
+CREATE_HOME (boolean) - indicates if a home dir should be created by default for new users.
+check the default behavior by cat /etc/login.defs (external config file (can be overriden by -m of useradd)
+
+passwd - prompt for new pass for your current account
+to another account u have to be root.
+--stdin takes standard input(cmd input or command) as password
+-e expiry - to force user to change pass next login
+
+su - 
+switch user + "-" to act as a login shell 

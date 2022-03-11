@@ -1,0 +1,29 @@
+ 108  vim luser-demo04.sh
+  109  type -a read
+  110  help read | less
+  111  read -p 'Type something: ' THING
+  112  echo ${THING}
+  113  read -p 'Type something: ' THING
+  114  echo ${THING}
+  115  vim luser-demo04.sh
+  116  man useradd
+  117  cat /etc/login.defs
+  118  /
+  119  vim luser-demo04.sh
+  120  man useradd
+  121  type -a psswd
+  122  vim luser-demo04.sh
+  123  sudo ./luser-demo04.sh
+  124  ls
+  125  whoami
+  126  pwd
+  127  ls -l
+  128  chmod +x luser-demo04.sh
+  129  ls -l
+  130  sudo ./luser-demo04.sh
+  131  su - jsmith
+  132  su - jdoe
+  133  history
+
+pswd for jdoe 
+blabla123
