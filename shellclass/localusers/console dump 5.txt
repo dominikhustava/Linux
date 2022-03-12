@@ -1,0 +1,36 @@
+ 142  cd /vagrant
+  143  vim luser-demo05.sh
+  144  man bash
+  145  echo ${RANDOM}
+  146  vim luser-demo05.sh
+  147  ./luser-demo05.sh
+  148  vim luser-demo05.sh
+  149  type -a date
+  150  man date
+  151  date +%s
+  152  date +%s%N
+  153  vim luser-demo05.sh
+  154  ls -l /usr/bin/*sum
+  155  date +%s
+  156  date +%s | sha1sum
+  157  date +%s | sha256sum
+  158  man sha256sum
+  159  type -a head
+  160  man head
+  161  head -n1 /etc/passwd
+  162  head -n 1 /etc/passwd
+  163  head -n 2 /etc/passwd
+  164  head 2 /etc/passwd
+  165  head -2 /etc/passwd
+  166  head -c 3 /etc/passwd
+  167  echo "Dominik" | head -c 3
+  168  date +%s | sha256sum | head -c 8
+  169  vim luser-demo05.sh
+  170  ./luser-demo05.sh
+  171  vim luser-demo05.sh
+  172  ./luser-demo05.sh
+  173  vim luser-demo05.sh
+  174  ./luser-demo05.sh
+  175  vim luser-demo05.sh
+  176  ./luser-demo05.sh
+  177  history
