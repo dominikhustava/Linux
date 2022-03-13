@@ -41,3 +41,27 @@ to another account u have to be root.
 
 su - 
 switch user + "-" to act as a login shell 
+
+${0} - variable is positional paramater which contains contents of cmdline
+parameter used inside the shell script
+argument is variable(data) passed into the shell script
+-so argument supplied on the cmdline becomes the value stored in a parameter 
+- very first positional parameter ${0} contains name of the script itself
+
+possible executions:
+./luser-demo06.sh
+/vagrant/luser-demo06.sh (absolute path)
+
+PATH   The  search  path  for commands.  
+It is a colon-separated list of directories in which the shell looks for commands (see COMMAND EXECUTION below).
+- Cesta v ktorej vyhladava commandy, programy. Napr: echo ${PATH}
+/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/sbin:/home/vagrant/bin
+Ked si pozriem napr head command s which head(which -a head) tak i najde /usr/bin. 
+Takze ked vytvorim sh script v /usr/local/bin s nazvom head a dam mu 755 (ako sudo), tak tym predbehnem ten defaultny command
+Takze potom type command a execuovanie bude pointovat na moj. Po odstraneni mojho custom sh nesmiem zabudnut hash -r, lebo inak bude stale pointovat nespravne
+
+man bash
+/SPECIAL
+Special Parameters
+${@} takes command arguments/parameters as list 
+${*} takes command arguments/parameters as one entry(string) made from pos parameters (starting from 1)

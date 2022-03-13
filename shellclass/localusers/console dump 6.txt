@@ -1,0 +1,64 @@
+ 182  ls -l
+  183  ./luser-demo06.sh
+  184  /vagrant/luser-demo06.sh
+  185  man bash
+  186  echo ${PATH}
+  187  which head
+  188  sudo vim /usr/local/bin/head
+  189   which head
+  190  sudo chmod 755 /usr/local/bin/head
+  191   which head
+  192  which -a head
+  193  head
+  194  sudo rm /usr/local/bin/head
+  195  which -a head
+  196  which head
+  197  type head
+  198  head
+  199  hash -r
+  200  type head
+  201  head
+  202  echo ${PATH}
+  203  which luser-demo06.sh
+  204  sudo cp luser-demo06.sh /usr/local/bin/
+  205  which luser-demo06.sh
+  206  luser-demo06.sh
+  207  ./luser-demo06.sh
+  208  /vagrant/luser-demo06.sh
+  209  luser-demo06.sh
+  210  sudo rm /usr/local/bin/luser-demo06.sh
+  211  man basename
+  212  basename /vagrant/luser-demo06.sh
+  213  basename /not/here
+  214  man dirname
+  215  dirname /vagrant/luser-demo06.sh
+  216  vim luser-demo06.sh
+  217  ./luser-demo06.sh
+  218  /vagrant/luser-demo06.sh
+  219  luser-demo06.sh
+  220  vim luser-demo06.sh
+  221  ./luser-demo06.sh
+  222  ./luser-demo06.sh bla
+  223  ./luser-demo06.sh bla bla bla bla
+  224  ./luser-demo06.sh bla "bla bla" bla
+  225  ./luser-demo06.sh bla 'bla bla' bla
+  226  vim luser-demo06.sh
+  227  ./luser-demo06.sh
+  228  ${?}
+  229  echo ${?}
+  230  ./luser-demo06.sh
+  231  echo ${?}
+  232  help for | head
+  233  for X in Frank Claire Doug; do   echo "Hi ${X}."; done
+  234  vim luser-demo06.sh
+  235  ./luser-demo06.sh dominik
+  236  vim luser-demo06.sh
+  237  ./luser-demo06.sh dominik
+  238  ./luser-demo06.sh dominik marek patrik
+  239  vim luser-demo06.sh
+  240  ./luser-demo06.sh dominik marek patrik
+  241  vim luser-demo06.sh
+  242  ./luser-demo06.sh dominik marek patrik
+  243  vim luser-demo06.sh
+  244  man bash
+  245  history
