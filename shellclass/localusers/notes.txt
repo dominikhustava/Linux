@@ -65,3 +65,7 @@ man bash
 Special Parameters
 ${@} takes command arguments/parameters as list 
 ${*} takes command arguments/parameters as one entry(string) made from pos parameters (starting from 1)
+
+> redirection to a file
+creates file when not exists, replaces content of file when exists
+< reading from a file, can be used as input to a command
