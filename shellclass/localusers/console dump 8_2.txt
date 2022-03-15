@@ -1,0 +1,40 @@
+ cat /etc/centos-release
+  272  read X < /etc/centos-release
+  273  echo ${X}
+  274  read X << /etc/centos-release
+  275  echo ${X}
+  276  ls
+  277  type -a read
+  278  help read
+  279  read X 0< /etc/centos-release
+  280  echo ${X}
+  281  echo "${UID}" > uid
+  282  ls
+  283  echo "${UID}" 1> uid
+  284  ls
+  285  cat uid
+  286  head -n1 /etc/passwd
+  287  head -n1 /etc/passwd /etc/hosts
+  288  head -n1 /etc/passwd /etc/hosts /nonexistingfile
+  289  head -n1 /etc/passwd /etc/hosts /nonexistingfile > head.out
+  290  cat head.out
+  291  head -n1 /etc/passwd /etc/hosts /nonexistingfile 2> head.err
+  292  cat head.err
+  293  head -n1 /etc/passwd /etc/hosts /nonexistingfile > head.out 2> head.err
+  294  head -n1 /etc/passwd /etc/hosts /nonexistingfile >> head.out 2>> head.err
+  295  cat head.out
+  296  cat head.err
+  297  head -n1 /etc/passwd /etc/hosts /nonexistingfile > head.both 2>&1
+  298  cat head.both
+  299  head -n1 /etc/passwd /etc/hosts /nonexistingfile &> head.both
+  300  cat head.both
+  301  head -n1 /etc/passwd /etc/hosts /nonexistingfile &>> head.both
+  302  cat head.both
+  303  head -n1 /etc/passwd /etc/hosts /nonexistingfile ls
+  304  ls -l
+  305  cat head.both
+  306  vim luser-demo08.sh
+  307  ./luser-demo08.sh
+  308  vim luser-demo08.sh
+  309  ./luser-demo08.sh
+  310  history

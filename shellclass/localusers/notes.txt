@@ -69,3 +69,17 @@ ${*} takes command arguments/parameters as one entry(string) made from pos param
 > redirection to a file
 creates file when not exists, replaces content of file when exists
 < reading from a file, can be used as input to a command
+if you want to append use >> 
+
+FD - file descriptor
+FD 0 - STDIN, FD 1 - STDOUT, FD 2 - STDERR
+head -n1 /etc/passwd /etc/hosts /nonexistingfile > head.both 2>&1
+redirecting both stdout and stderr to same file
+head -n1 /etc/passwd /etc/hosts /nonexistingfile &> head.both
+newer syntax
+
+head -n1 /etc/passwd /etc/hosts /nonexistingfile &>> head.both - append both
+
+WHEN PIPEing, we only get stdout(without stderr) through pipe. we have to use redirection of stderr to stdout.
+2> this is stderr &1 refers to the FD1, which is stdout, so:
+2>&1 | or shorcut syntax |&
