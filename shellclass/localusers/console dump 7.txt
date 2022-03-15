@@ -1,0 +1,11 @@
+ vim luser-demo07.sh
+  248  ls -l
+  249  chmod -x luser-demo07.sh
+  250  ls -l
+  251  chmod +x luser-demo07.sh
+  252  ls -l
+  253  ./luser-demo07.sh apple bread candy
+  254  ./luser-demo07.sh apple bread candy dumplings
+  255  cd luser-demo07.sh /vagrant/luser-demo07.sh
+  256  cp luser-demo07.sh /vagrant/luser-demo07.sh
+  257  cd /vagrant
