@@ -86,3 +86,7 @@ WHEN PIPEing, we only get stdout(without stderr) through pipe. we have to use re
 & represents File Descriptor 
 
 /dev/null - place to send stdout err if we want to discard them
+
+Functions
+- have to be defined on top, cuz linuz is reading from top down
+- we can accept argument (without defining them) - only difference is that ${0} is still the name of the shell script, not the function
