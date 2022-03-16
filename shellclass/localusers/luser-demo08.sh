@@ -43,3 +43,29 @@ head -n3 /etc/passwd /nonexistingfile &> ${FILE}
 echo
 echo "Contents of ${FILE}:"
 cat ${FILE}
+
+# Redirect STDOUT and STDERR through a pipe.
+echo
+head -n3 /etc/passwd /nonexistingfile |& cat -n
+
+# Send output to STDERR
+echo "THIS is STDERR!" >&2
+
+# Discard STDOUT
+echo 
+echo "Discarding STDOUT:"
+head -n3 /etc/passwd /nonexistingfile > /dev/null
+
+# Discard STDERR
+echo
+echo "Discarding STDERR:"
+head -n3 /etc/passwd /nonexistingfile 2> /dev/null
+
+# Discarding both
+echo
+echo "Discarding STDOUT and STDERR:"
+head -n3 /etc/passwd /nonexistingfile &> /dev/null
+
+# Clean up
+rm ${FILE} ${ERR_FILE}
+

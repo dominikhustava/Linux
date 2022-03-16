@@ -83,3 +83,6 @@ head -n1 /etc/passwd /etc/hosts /nonexistingfile &>> head.both - append both
 WHEN PIPEing, we only get stdout(without stderr) through pipe. we have to use redirection of stderr to stdout.
 2> this is stderr &1 refers to the FD1, which is stdout, so:
 2>&1 | or shorcut syntax |&
+& represents File Descriptor 
+
+/dev/null - place to send stdout err if we want to discard them
